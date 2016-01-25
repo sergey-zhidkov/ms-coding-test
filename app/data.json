@@ -1,0 +1,24 @@
+{
+  "video": [
+    {
+      "src": "http://video.webmfiles.org/big-buck-bunny_trailer.webm",
+      "type": "video/webm"
+    },
+    {
+      "src": "http://video.blendertestbuilds.de/download.blender.org/peach/trailer_480p.mov",
+      "type": "video/mp4"
+    }
+  ],
+  "audio": [
+    {
+      "src": "http://www.thewormlab.com/MiaowMusic/mp3/Miaow-snip-Stirring of a fool.mp3",
+      "type": "audio/mpeg"
+    },
+    {
+      "src": "http://www.thewormlab.com/MiaowMusic/ogg/Miaow-snip-Stirring of a fool.ogg",
+      "type": "audio/ogg"
+    }
+  ],
+  "terms": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit ipsum vitae urna convallis convallis. Etiam dignissim diam quis justo malesuada, ut ultricies augue posuere. Morbi aliquet quam nec mollis sollicitudin. Nulla sit amet dignissim diam. Sed semper leo leo, sed facilisis enim posuere lacinia. Quisque nec lorem quam. Etiam pellentesque, ligula nec convallis dignissim, est diam scelerisque turpis, sed aliquet turpis justo at neque. Integer consequat lobortis tortor, sed volutpat nibh maximus fermentum. Sed commodo fringilla mi at condimentum.",
+  "image": ""
+}

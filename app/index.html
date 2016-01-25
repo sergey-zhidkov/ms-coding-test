@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Test</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--<div class="container">-->
+        <!--<video controls preload="auto">-->
+            <!--<source src="http://video.webmfiles.org/big-buck-bunny_trailer.webm" type="video/webm">-->
+            <!--<source src="http://video.blendertestbuilds.de/download.blender.org/peach/trailer_480p.mov" type="video/mp4">-->
+            <!--Your browser doesn't support HTML5 video.-->
+        <!--</video>-->
+
+
+        <!--<audio controls>-->
+            <!--<source src="http://www.thewormlab.com/MiaowMusic/mp3/Miaow-snip-Stirring of a fool.mp3" type="audio/mpeg"/>-->
+            <!--<source src="http://www.thewormlab.com/MiaowMusic/ogg/Miaow-snip-Stirring of a fool.ogg" type="audio/ogg"/>-->
+        <!--</audio>-->
+    <!--</div>-->
+
+    <div class="container">
+
+    </div>
+
+    <script id="video-container-template" type="text/x-handlebars-template">
+        <div class="video-container">
+            <video controls preload="auto" autoplay>
+                {{#each video}}
+                    <source src="{{src}}" type="{{type}}"/>
+                {{/each}}
+            </video>
+            <br/>
+            <button class="skip-video">Skip Video</button>
+            <button class="fullscreen-video">Fullscreen Video</button>
+        </div>
+    </script>
+
+    <script id="general-view-template" type="text/x-handlebars-template">
+        <div class="general-view-container">
+        </div>
+    </script>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
