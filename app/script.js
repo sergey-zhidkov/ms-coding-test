@@ -64,7 +64,7 @@
       $videoContainer.hide();
       $generalContainer.show();
       audio.currentTime = 0;
-      //audio.play();
+      audio.play();
     });
 
     function isInFullScreen() {
