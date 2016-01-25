@@ -143,7 +143,7 @@
     });
 
     $generalContainer.find('.terms').on('click', function() {
-      $termsContainer.show
+      $termsContainer.show();
     });
     $termsContainer.find('.close-terms').on('click', function() {
       $termsContainer.hide();
