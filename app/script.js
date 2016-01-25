@@ -5,6 +5,7 @@
     // load json data
     var dataPromise = $.getJSON('data.json');
     dataPromise.done(function(data) {
+      // create views
       var $container = $('.container');
       var $videoContainer = createVideoOverlay(data);
       var $generalContainer = createGeneralView(data);
@@ -14,11 +15,14 @@
       $container.append($generalContainer);
       $container.append($termsContainer);
 
+      // add background image
+      // I know, you ask to add background image only for second screen,
+      // but I think this approach looks much better
       $('body').css('background-image', 'url(' + data.image + ')');
 
       addEvents($container);
     }).fail(function() {
-      console.log(arguments);
+      throw new Error("Cannot load data");
     });
   });
 
@@ -138,13 +142,7 @@
       video.play();
     });
 
-    $generalContainer.find('.terms').on('click', showTermsOverlay);
-    $termsContainer.find('.close-terms').on('click', function() {
-      $termsContainer.hide();
-    });
-
-    function showTermsOverlay() {
-      $termsContainer.show();
-    }
+    $generalContainer.find('.terms').on('click', $termsContainer.show);
+    $termsContainer.find('.close-terms').on('click', $termsContainer.hide);
   }
 })();

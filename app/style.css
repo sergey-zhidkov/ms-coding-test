@@ -43,13 +43,6 @@ button:hover {
     width: 100%;
 }
 
-/*.video-container:fullscreen,*/
-/*.video-container:-moz-full-screen,*/
-/*.video-container:-webkit-full-screen,*/
-/*.video-container:-ms-fullscreen {*/
-    /*width: 100%;*/
-/*}*/
-
 /* General View Container */
 .general-view-container {
     padding: 20px;
@@ -71,18 +64,14 @@ button:hover {
     top: 0;
     bottom: 0;
     background-color: rgba(204, 204, 204, 0.9);
-    /*display: flex;*/
-    /*align-items: center;*/
 }
 
 .terms-container .terms-body {
-    /*position: relative;*/
     width: 50%;
     margin: 0 auto;
     background-color: #aaa;
     border: 2px solid #333;
     padding: 2rem;
-    /*top: 20%;*/
     transform: translateY(30%);
 }
 
