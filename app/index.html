@@ -26,19 +26,42 @@
 
     <script id="video-container-template" type="text/x-handlebars-template">
         <div class="video-container">
-            <video controls preload="auto" autoplay>
-                {{#each video}}
-                    <source src="{{src}}" type="{{type}}"/>
-                {{/each}}
-            </video>
-            <br/>
-            <button class="skip-video">Skip Video</button>
-            <button class="fullscreen-video">Fullscreen Video</button>
+            <section>
+                <video controls preload="auto" autoplay>
+                    {{#each video}}
+                        <source src="{{src}}" type="{{type}}"/>
+                    {{/each}}
+                </video>
+            </section>
+            <section class="buttons">
+                <button class="skip-video">Skip Video</button>
+                <button class="fullscreen-video">Fullscreen Video</button>
+            </section>
         </div>
     </script>
 
     <script id="general-view-template" type="text/x-handlebars-template">
         <div class="general-view-container">
+            <section>
+                <button class="replay-video">Replay Video</button>
+                <button class="terms">Show Terms and Conditions</button>
+            </section>
+            <audio loop>
+                {{#each audio}}
+                    <source src="{{src}}" type="{{type}}"/>
+                {{/each}}
+            </audio>
+        </div>
+    </script>
+
+    <script id="terms-template" type="text/x-handlebars-template">
+        <div class="terms-container">
+            <div>
+                <section>
+                    {{terms}}
+                </section>
+                <button>Close</button>
+            </div>
         </div>
     </script>
 
