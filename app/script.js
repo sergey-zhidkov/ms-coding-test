@@ -3,7 +3,7 @@
 (function() {
   $(document).ready(function() {
     // load json data
-    var dataPromise = $.getJSON('data.json');
+    var dataPromise = $.getJSON('./app/data.json');
     dataPromise.done(function(data) {
       // create views
       var $container = $('.container');
