@@ -62,7 +62,7 @@
       $videoContainer.hide();
       $generalContainer.show();
       audio.currentTime = 0;
-      audio.play();
+      //audio.play();
     });
 
     function isInFullScreen() {
@@ -136,5 +136,13 @@
       video.play();
     });
 
+    $generalContainer.find('.terms').on('click', showTermsOverlay);
+    $termsContainer.find('.close-terms').on('click', function() {
+      $termsContainer.hide();
+    });
+
+    function showTermsOverlay() {
+      $termsContainer.show();
+    }
   }
 })();

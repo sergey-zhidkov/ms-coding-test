@@ -43,6 +43,10 @@
     <script id="general-view-template" type="text/x-handlebars-template">
         <div class="general-view-container">
             <section>
+                <h1>Greetings</h1>
+                <p>{{text1}}</p>
+                <p>{{text2}}</p>
+                <p>{{text3}}</p>
                 <button class="replay-video">Replay Video</button>
                 <button class="terms">Show Terms and Conditions</button>
             </section>
@@ -56,11 +60,12 @@
 
     <script id="terms-template" type="text/x-handlebars-template">
         <div class="terms-container">
-            <div>
+            <div class="terms-body">
                 <section>
-                    {{terms}}
+                    <h1>Terms and Conditions</h1>
+                    <p>{{terms}}</p>
                 </section>
-                <button>Close</button>
+                <button class="close-terms">Close</button>
             </div>
         </div>
     </script>

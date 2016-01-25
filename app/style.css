@@ -1,13 +1,17 @@
 .container {
     width: 70%;
     margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+button {
+    width: 45%;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .video-container, .general-view-container, .terms-container {
     display: none;
-}
-
-.video-container {
     text-align: center;
 }
 
@@ -15,12 +19,32 @@
     width: 100%;
 }
 
-.video-container button {
-    width: 45%;
-    font-size: 1.5rem;
-    font-weight: bold;
+.general-view-container {
+
+}
+
+.general-view-container p {
+    text-align: justify;
 }
 
 .general-view-container audio {
     display: none;
+}
+
+.terms-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #ccc;
+}
+
+.terms-container .terms-body {
+    /*width: 50%;*/
+    /*height: 50%;*/
+}
+
+.terms-container p {
+    text-align: justify;
 }
