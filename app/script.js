@@ -142,7 +142,11 @@
       video.play();
     });
 
-    $generalContainer.find('.terms').on('click', $termsContainer.show);
-    $termsContainer.find('.close-terms').on('click', $termsContainer.hide);
+    $generalContainer.find('.terms').on('click', function() {
+      $termsContainer.show
+    });
+    $termsContainer.find('.close-terms').on('click', function() {
+      $termsContainer.hide();
+    });
   }
 })();
