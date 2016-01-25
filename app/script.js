@@ -14,6 +14,8 @@
       $container.append($generalContainer);
       $container.append($termsContainer);
 
+      $('body').css('background-image', 'url(' + data.image + ')');
+
       addEvents($container);
     }).fail(function() {
       console.log(arguments);
@@ -24,7 +26,7 @@
     var source = $(selector).html();
     var template = Handlebars.compile(source);
     var html = template(data);
-    return html;
+    return $(html);
   }
 
   function createVideoOverlay(data) {
